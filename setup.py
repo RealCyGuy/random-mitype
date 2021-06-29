@@ -4,19 +4,18 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 # exec(open("random_mitype/version.py").read())
-__version__ = "0.1.0"
 
 setup(
     name="random_mitype",
-    version=__version__,
+    version="0.1.1",
     py_modules=find_packages(),
     include_package_data=True,
     description="Generate random typing tests for mitype.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Cyrus Yip",
-    install_requires=["Click", "mitype"],
-    entry_points={"console_scripts": ["random_mitype=random_mitype.random_mitype:cli", ], },
+    install_requires=["Click"],
+    entry_points={"console_scripts": ["random-mitype=random_mitype.random_mitype:cli", ], },
     license="MIT",
     url="https://github.com/RealCyGuy/random-mitype",
     classifiers=[
