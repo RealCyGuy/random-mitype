@@ -1,4 +1,4 @@
-[
+word_list = [
     "the",
     "be",
     "of",

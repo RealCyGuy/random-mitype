@@ -7,10 +7,9 @@ with open("README.md", "r") as f:
 
 setup(
     name="random_mitype",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
     include_package_data=True,
-    data_files=[('words', ['words/english.json'])],
     description="Generate random typing tests for mitype.",
     long_description=long_description,
     long_description_content_type="text/markdown",
