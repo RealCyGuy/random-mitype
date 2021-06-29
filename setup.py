@@ -3,8 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as f:
     long_description = f.read()
 
-# exec(open("random_mitype/version.py").read())
-__version__ = "0.1.0"
+exec(open("random_mitype/version.py").read())
 
 setup(
     name="random_mitype",
