@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 setup(
     name="random_mitype",
     version="0.1.1",
-    py_modules=find_packages(),
+    packages=find_packages(),
     include_package_data=True,
     description="Generate random typing tests for mitype.",
     long_description=long_description,
