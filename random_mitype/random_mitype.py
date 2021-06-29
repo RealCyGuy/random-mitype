@@ -5,7 +5,8 @@ import random
 
 import click
 
-from version import __version__
+from .version import __version__
+from . import words as w
 
 
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
@@ -17,7 +18,7 @@ def cli(words):
         return click.echo("WORDS must be higher than 0.")
     elif words > 10000:
         return click.echo("WORDS must be lower than 10000.")
-    word_list = json.loads(pkg_resources.read_text("words", "english.json"))
+    word_list = json.loads(pkg_resources.read_text(w, "english.json"))
     text = " ".join(random.choices(word_list, k=words))
     name = f"{words} random words"
     with open(name, "w") as f:
