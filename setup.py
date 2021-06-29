@@ -13,6 +13,7 @@ setup(
     include_package_data=True,
     description="Generate random typing tests for mitype.",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Cyrus Yip",
     install_requires=["Click", "mitype"],
     entry_points={"console_scripts": ["random_mitype=random_mitype.random_mitype:cli", ], },
